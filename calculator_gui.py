@@ -73,6 +73,41 @@ clear_button = tk.Button(window,
 clear_button.grid(row=4, column=1)
 
 
+def calculate():
+    try:
+        expression = display.get()
+
+        result = eval(expression)
+
+        display.delete(0, tk.END)
+        display.insert(tk.END, result)
+
+    except:
+        display.delete(0, tk.END)
+        display.insert(tk.END, "Error")
+
+
+button_add = tk.Button(window, text="+", width=5, height=2, command=lambda:
+                 click("+"))
+button_add.grid(row=1, column=3)
+
+button_sub = tk.Button(window, text="-", width=5, height=2, command=lambda:
+            click("-"))
+button_sub.grid(row=2, column=3)
+
+button_mul = tk.Button(window, text="*", width=5, height=2, command=lambda:
+            click("*"))
+button_mul.grid(row=3, column=3)
+
+button_div = tk.Button(window, text="/", width=5, height=2, command=lambda:
+              click("/"))
+button_div.grid(row=4, column=3)
+
+button_equal = tk.Button(window, text="=", width=5, height=2,
+               command=calculate)
+button_equal.grid(row=4, column=2)
+
+
 window.mainloop()
 
 
