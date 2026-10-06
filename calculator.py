@@ -17,6 +17,11 @@ elif operation == "*":
 elif operation == "/":
     print("Result:", num1 / num2)
 
+elif num2 == 0:
+    print("Cannot divide by zero!")
+
 else:
     print("Invalid operation!")
+
+
 
