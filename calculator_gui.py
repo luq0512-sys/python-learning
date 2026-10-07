@@ -72,26 +72,41 @@ button6 = tk.Button(
 )
 button6.grid(row=2, column=2, padx=2, pady=2)
 
-button7 = tk.Button(window, text="7",
-                    command=lambda:
-click("7"))
-button7.grid(row=3, column=0)
+button7 = tk.Button(
+    window, 
+    text="7", 
+    width=5, 
+    height=2,
+    command=lambda:click("7")
+)
+button7.grid(row=2, column=2, padx=2, pady=2)
 
-button8 = tk.Button(window, text="8",
-                    command=lambda:
-click("8"))
-button8.grid(row=3, column=1)
+button8 = tk.Button(
+    window, 
+    text="8", 
+    width=5, 
+    height=2,
+    command=lambda:click("8")
+)
+button8.grid(row=2, column=2, padx=2, pady=2)
 
-button9 = tk.Button(window, text="9",
-                    command=lambda:
-click("9"))
-button9.grid(row=3, column=2)
+button9 = tk.Button(
+    window, 
+    text="9", 
+    width=5, 
+    height=2,
+    command=lambda:click("9")
+)
+button9.grid(row=2, column=2, padx=2, pady=2)
 
-button0 = tk.Button(window, text="0",
-                    command=lambda:
-click("0"))
-button0.grid(row=4, column=0)
-
+button0 = tk.Button(
+    window, 
+    text="0", 
+    width=5, 
+    height=2,
+    command=lambda:click("0")
+)
+button0.grid(row=2, column=2, padx=2, pady=2)
 
 def clear():
     display.delete(0, tk.END)
